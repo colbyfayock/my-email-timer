@@ -1,13 +1,4 @@
-import {
-  Body,
-  Container,
-  Head,
-  Hr,
-  Html,
-  Img,
-  Preview,
-  Text,
-} from '@react-email/components';
+import { Body, Container, Head, Hr, Html, Img, Preview, Text } from '@react-email/components';
 import * as React from 'react';
 
 export const HolidayEmail = () => (
@@ -25,6 +16,14 @@ export const HolidayEmail = () => (
           The elves and I have been preparing for an extra special holiday
           this year. We&apos;re looking forward to delivering presents to you
           and all of the children around the world.
+        </Text>
+        <Text style={paragraph}>
+          <Img
+            src="http://localhost:3002/api/timer"
+            width="600"
+            height="400"
+            alt="Holiday card"
+          />
         </Text>
         <Text style={paragraph}>
           Happy holidays,
