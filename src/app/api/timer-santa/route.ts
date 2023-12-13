@@ -10,31 +10,50 @@ export async function GET() {
 
   const url = getCldImageUrl({
     src: 'my-email-timer/amy-shamblen-x2lm26Rs2PM-unsplash_i47hav',
-    width: 1200,
+    width: 800,
+    height: 500,
+    crop: 'fill',
     format: 'jpg',
+    effects: [{
+      colorize: '100,co_rgb:dc332f',
+    }],
     overlays: [
       {
         text: {
-          color: 'rgb:BFFBFF',
-          text: 'Santa is coming in'.toUpperCase(),
-          fontFamily: 'Oswald',
-          fontSize: 70
+          color: 'white',
+          text: `Santa is coming in`.toUpperCase(),
+          fontSize: 50,
+          fontFamily: 'Oswald'
         },
         position: {
-          y: -60
+          gravity: 'north',
+          y: 50
         }
       },
       {
+        crop: 'lpad',
+        width: 'w_add_50',
+        height: 'h_add_50',
         text: {
           color: 'white',
           text: `${days} Days  ${hours} Hours`,
+          fontSize: 80,
           fontFamily: 'Berkshire Swash',
-          fontSize: 120
+          fontWeight: 'semibold'
         },
         position: {
-          y: 40
+          gravity: 'north',
+          y: 70
         }
       },
+      {
+        publicId: 'my-email-timer/krakenimages-liT5AlTmC8I-unsplash-transparent_tfcpki',
+        width: '1.0',
+        position: {
+          y: 200,
+        },
+        flags: ['relative'],
+      }
     ]
   });
 

@@ -9,32 +9,60 @@ export async function GET() {
   const days = Math.floor(timeLeft / (1000 * 60 * 60 * 24));
 
   const url = getCldImageUrl({
-    src: 'my-email-timer/amy-shamblen-x2lm26Rs2PM-unsplash_i47hav',
-    width: 1200,
+    src: 'my-email-timer/annie-spratt-8ydrw1__vrs-unsplash_gs2kw5',
+    width: 800,
+    height: 500,
+    crop: 'fill',
+    gravity: 'north',
     format: 'jpg',
+    effects: [{
+      brightness: -20,
+    }],
     overlays: [
       {
         text: {
-          color: 'rgb:BFFBFF',
-          text: 'Santa is coming in'.toUpperCase(),
-          fontFamily: 'Oswald',
-          fontSize: 70
+          color: 'white',
+          text: `Santa is coming in`.toUpperCase(),
+          fontSize: 50,
+          fontFamily: 'Oswald'
         },
         position: {
-          y: -60
+          y: -40
         }
       },
       {
+        crop: 'lpad',
+        width: 'w_add_50',
+        height: 'h_add_50',
+        text: {
+          color: 'rgb:ffbf00',
+          text: `${days} Days  ${hours} Hours`,
+          fontSize: 80,
+          fontFamily: 'Berkshire Swash',
+          fontWeight: 'semibold'
+        },
+        effects: [{
+          blur: 1500
+        }],
+        position: {
+          y: 20
+        }
+      },
+      {
+        crop: 'lpad',
+        width: 'w_add_50',
+        height: 'h_add_50',
         text: {
           color: 'white',
           text: `${days} Days  ${hours} Hours`,
+          fontSize: 80,
           fontFamily: 'Berkshire Swash',
-          fontSize: 120
+          fontWeight: 'semibold'
         },
         position: {
-          y: 40
+          y: 20
         }
-      },
+      }
     ]
   });
 

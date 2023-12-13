@@ -19,7 +19,25 @@ export const HolidayEmail = () => (
         </Text>
         <Text style={paragraph}>
           <Img
-            src="http://localhost:3002/api/timer"
+            src={`http://localhost:3001/api/timer?t=${Date.now()}`}
+            width="600"
+            height="400"
+            alt="Holiday card"
+          />
+          <Img
+            src={`http://localhost:3001/api/timer-santa?t=${Date.now()}`}
+            width="600"
+            height="400"
+            alt="Holiday card"
+          />
+          <Img
+            src={`http://localhost:3001/api/timer-cozy?t=${Date.now()}`}
+            width="600"
+            height="600"
+            alt="Holiday card"
+          />
+          <Img
+            src={`http://localhost:3001/api/timer-holiday?t=${Date.now()}`}
             width="600"
             height="400"
             alt="Holiday card"
