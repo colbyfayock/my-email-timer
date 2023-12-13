@@ -80,7 +80,8 @@ export async function GET() {
     headers: {
       'Content-Type': String(image.headers.get('Content-Type')),
       'Content-Length': String(image.headers.get('Content-Length')),
-      'Cache-Control': 'no-store, no-cache, must-revalidate, max-age=0'
+      // Uncomment to disable cache on the endpoint
+      // 'Cache-Control': 'no-store, no-cache, must-revalidate, max-age=0'
     }
   })
 }
