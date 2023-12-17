@@ -46,7 +46,7 @@ export async function GET() {
       'Content-Type': String(image.headers.get('Content-Type')),
       'Content-Length': String(image.headers.get('Content-Length')),
       // Uncomment to disable cache on the endpoint
-      // 'Cache-Control': 'no-store, no-cache, must-revalidate, max-age=0'
+      'Cache-Control': 'no-store, no-cache, must-revalidate, max-age=0'
     }
   })
 }
