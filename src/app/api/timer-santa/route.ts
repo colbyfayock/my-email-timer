@@ -9,7 +9,7 @@ export async function GET() {
   const days = Math.floor(timeLeft / (1000 * 60 * 60 * 24));
 
   const url = getCldImageUrl({
-    src: 'my-email-timer/amy-shamblen-x2lm26Rs2PM-unsplash_i47hav',
+    src: 'tutorials/my-email-timer/amy-shamblen-x2lm26Rs2PM-unsplash_i47hav',
     width: 800,
     height: 500,
     crop: 'fill',
@@ -47,7 +47,7 @@ export async function GET() {
         }
       },
       {
-        publicId: 'my-email-timer/krakenimages-liT5AlTmC8I-unsplash-transparent_tfcpki',
+        publicId: 'tutorials/my-email-timer/krakenimages-liT5AlTmC8I-unsplash-transparent_tfcpki',
         width: '1.0',
         position: {
           y: 200,
