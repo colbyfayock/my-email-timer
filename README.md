@@ -3,7 +3,8 @@
 Demo for tutorial
 
 🚀 Demo: https://my-email-timer.vercel.app/
-📺 YouTube: 
+
+📺 YouTube: https://www.youtube.com/watch?v=luHch0sjR_k
 
 ## More tutorials and walkthroughs
 
