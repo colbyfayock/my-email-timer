@@ -10,7 +10,7 @@ export default function Home() {
   return (
     <main className="grid grid-cols-2 items-center max-w-2xl mx-auto">
       <CldImage
-        src="my-email-timer/amy-shamblen-x2lm26Rs2PM-unsplash_i47hav"
+        src="tutorials/my-email-timer/amy-shamblen-x2lm26Rs2PM-unsplash_i47hav"
         width={1200}
         height={800}
         crop="fill"
@@ -42,7 +42,7 @@ export default function Home() {
         alt="Holiday Card"
       />
       <CldImage
-        src="my-email-timer/amy-shamblen-x2lm26Rs2PM-unsplash_i47hav"
+        src="tutorials/my-email-timer/amy-shamblen-x2lm26Rs2PM-unsplash_i47hav"
         width={1200}
         height={800}
         crop="fill"
@@ -80,7 +80,7 @@ export default function Home() {
             }
           },
           {
-            publicId: 'my-email-timer/krakenimages-liT5AlTmC8I-unsplash-transparent_tfcpki',
+            publicId: 'tutorials/my-email-timer/krakenimages-liT5AlTmC8I-unsplash-transparent_tfcpki',
             width: '1.0',
             position: {
               y: 200,
@@ -91,14 +91,14 @@ export default function Home() {
         alt="Holiday Card"
       />
       <CldImage
-        src="my-email-timer/michael-fenton-8hTWsi2OSoA-unsplash_bsql8r"
+        src="tutorials/my-email-timer/michael-fenton-8hTWsi2OSoA-unsplash_bsql8r"
         width={1200}
         height={800}
         crop="fill"
         format="jpg"
         overlays={[
           {
-            publicId: 'my-email-timer/christopher-campbell-h9Rx3zOYZws-unsplash_cibthm',
+            publicId: 'tutorials/my-email-timer/christopher-campbell-h9Rx3zOYZws-unsplash_cibthm',
             width: '1.5',
             flags: ['relative'],
             position: {
@@ -156,7 +156,7 @@ export default function Home() {
         alt="Holiday Card"
       />
       <CldImage
-        src="my-email-timer/annie-spratt-8ydrw1__vrs-unsplash_gs2kw5"
+        src="tutorials/my-email-timer/annie-spratt-8ydrw1__vrs-unsplash_gs2kw5"
         width={1200}
         height={800}
         crop="fill"
