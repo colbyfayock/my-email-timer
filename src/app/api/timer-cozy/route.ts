@@ -9,14 +9,14 @@ export async function GET() {
   const days = Math.floor(timeLeft / (1000 * 60 * 60 * 24));
 
   const url = getCldImageUrl({
-    src: 'my-email-timer/michael-fenton-8hTWsi2OSoA-unsplash_bsql8r',
+    src: 'tutorials/my-email-timer/michael-fenton-8hTWsi2OSoA-unsplash_bsql8r',
     width: 800,
     height: 800,
     crop: 'fill',
     format: 'jpg',
     overlays: [
       {
-        publicId: 'my-email-timer/christopher-campbell-h9Rx3zOYZws-unsplash_cibthm',
+        publicId: 'tutorials/my-email-timer/christopher-campbell-h9Rx3zOYZws-unsplash_cibthm',
         width: '1.5',
         flags: ['relative'],
         position: {
