@@ -9,7 +9,7 @@ export async function GET() {
   const days = Math.floor(timeLeft / (1000 * 60 * 60 * 24));
 
   const url = getCldImageUrl({
-    src: 'my-email-timer/amy-shamblen-x2lm26Rs2PM-unsplash_i47hav',
+    src: 'tutorials/my-email-timer/amy-shamblen-x2lm26Rs2PM-unsplash_i47hav',
     width: 1200,
     format: 'jpg',
     overlays: [
