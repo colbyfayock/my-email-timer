@@ -1,4 +1,4 @@
-import { getCldImageUrl } from 'next-cloudinary/helpers';
+import { getCldImageUrl } from 'next-cloudinary';
 
 export async function GET() {
   const dateToday = new Date();
@@ -16,7 +16,7 @@ export async function GET() {
     gravity: 'north',
     format: 'jpg',
     effects: [{
-      brightness: -20,
+      brightness: '-20' as any,
     }],
     overlays: [
       {
@@ -42,7 +42,7 @@ export async function GET() {
           fontWeight: 'semibold'
         },
         effects: [{
-          blur: 1500
+          blur: '1500' as any
         }],
         position: {
           y: 20

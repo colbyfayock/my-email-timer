@@ -1,4 +1,4 @@
-import { getCldImageUrl } from 'next-cloudinary/helpers';
+import { getCldImageUrl } from 'next-cloudinary';
 
 export async function GET() {
   const dateToday = new Date();
