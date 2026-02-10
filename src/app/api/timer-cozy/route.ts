@@ -49,7 +49,7 @@ export async function GET() {
           fontWeight: 'semibold'
         },
         effects: [{
-          blur: '1500' as any
+          blur: 1500
         }],
         position: {
           y: 20

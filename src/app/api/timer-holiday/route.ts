@@ -16,7 +16,7 @@ export async function GET() {
     gravity: 'north',
     format: 'jpg',
     effects: [{
-      brightness: '-20' as any,
+      brightness: '-20',
     }],
     overlays: [
       {
@@ -42,7 +42,7 @@ export async function GET() {
           fontWeight: 'semibold'
         },
         effects: [{
-          blur: '1500' as any
+          blur: 1500
         }],
         position: {
           y: 20

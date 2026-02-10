@@ -124,15 +124,87 @@ export default function Home() {
             width: 'w_add_50',
             height: 'h_add_50',
             text: {
-              color: 'white',
+              color: 'rgb:ffbf00',
               text: `${days} Days  ${hours} Hours`,
               fontSize: 120,
               fontFamily: 'Berkshire Swash',
               fontWeight: 'semibold'
             },
             effects: [{
-              blur: '1500' as any
+              blur: 1500
             }],
+            position: {
+              y: 40
+            }
+          },
+          {
+            crop: 'lpad',
+            width: 'w_add_50',
+            height: 'h_add_50',
+            text: {
+              color: 'white',
+              text: `${days} Days  ${hours} Hours`,
+              fontSize: 120,
+              fontFamily: 'Berkshire Swash',
+              fontWeight: 'semibold'
+            },
+            position: {
+              y: 40
+            }
+          }
+        ]}
+        alt="Holiday Card"
+      />
+      <CldImage
+        src="tutorials/my-email-timer/annie-spratt-8ydrw1__vrs-unsplash_gs2kw5"
+        width={1200}
+        height={800}
+        crop="fill"
+        format="jpg"
+        effects={[{
+          brightness: '-20',
+        }]}
+        overlays={[
+          {
+            text: {
+              color: 'white',
+              text: `Santa is coming in`.toUpperCase(),
+              fontSize: 70,
+              fontFamily: 'Oswald'
+            },
+            position: {
+              y: -60
+            }
+          },
+          {
+            crop: 'lpad',
+            width: 'w_add_50',
+            height: 'h_add_50',
+            text: {
+              color: 'rgb:ffbf00',
+              text: `${days} Days  ${hours} Hours`,
+              fontSize: 120,
+              fontFamily: 'Berkshire Swash',
+              fontWeight: 'semibold'
+            },
+            effects: [{
+              blur: 1500
+            }],
+            position: {
+              y: 40
+            }
+          },
+          {
+            crop: 'lpad',
+            width: 'w_add_50',
+            height: 'h_add_50',
+            text: {
+              color: 'white',
+              text: `${days} Days  ${hours} Hours`,
+              fontSize: 120,
+              fontFamily: 'Berkshire Swash',
+              fontWeight: 'semibold'
+            },
             position: {
               y: 40
             }
